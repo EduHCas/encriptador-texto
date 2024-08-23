@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding:0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: #0da30d;    
+}
+header{
+    background-color: #1a1919;
+    color: #0da30d;
+    border: 2px solid #0da30d;
+    position: relative;
+    padding: auto;
+    
+}
+.logo{
+    width: 120px;
+    margin-top: 20px;
+}
+.titulo-destacado{
+    color: #0da30d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    width: 90%;
+    height: 75%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    gap: 3%;
+}
+.ingrese-texto{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 24px 0;
+    align-items: center;
+    position: relative;
+}
+.text-area{
+    background-color: #000000;
+    border: 2px solid #0da30d;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    color: #0da30d;
+    text-transform: lowercase;
+    cursor: pointer;
+    resize: none;
+}
+::placeholder { color: #0da30d; }
+    .text-area:focus {
+        outline: none;
+    }
+
+.informacion{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 2%;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5%;
+    padding: 1%;
+    margin-top: 5px;
+}
+
+.btn-encriptar{
+    background-color: #000000;
+    border: 2px solid #0da30d;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0da30d;
+    position: relative;
+}
+
+.btn-desencriptar{
+    background-color: #201d1d;
+    border: 2px solid #0da30d;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0da30d;
+    position: relative;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover{
+    margin: 0.3%;
+}
+
+.seccion-copiar{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px 0;
+    align-items: center;
+    position: relative;
+    
+}
+.mensaje{
+    background-color: #000000;
+    border: 2px solid #0da30d;
+    background-image: url(imgenes/Muñeco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 85%;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    color: #0da30d;
+    resize: none;
+}
+.mensaje:focus {
+    outline:none;
+}
+.contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    font-size: 1rem;
+}
+.div-boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.copiar{
+    background-color: #000000;
+    border: 2px solid #0da30d;
+    width: 50%;
+    text-align: center;
+    margin-top: 29px;
+    padding: 20px 0;
+    border-radius: 24px;
+    margin-top: 0%;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0da30d;
+    position: relative;
+}
+.copiar:hover{
+    background-color: #1a1919;
+}
+
+.footer{
+
+    background-color: #000000;
+    color: #0da30d;
+    padding: auto;
+    margin-top: 2px;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+}
+.hr{
+    background-color: #0da30d;
+    height:3px;
+    border: none;
+    margin-bottom: 2px;
+}
+
+/* Ordenadores y pantallas de escritorio medianos */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+    .text_area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .footer {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablets en modo horizontal y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .ingrese-texto,
+    .seccion-copiar {
+        height: 100%;
+    }
+
+    .text_area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.4rem;
+        background-size:65% 85%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .footer {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Dispositivos móviles y tablets en modo vertical */
+@media (max-width: 767px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ingrese-texto,
+    .seccion-copiar {
+        width: 85%;
+    }
+
+    .text-area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.2rem;
+        background-size:65% 85%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .footer {
+
+        font-size: 1.2rem;
+        padding: 3%;
+    }
+}
+
+/* Dispositivos móviles muy pequeños */
+@media (max-width: 480px) {
+    .ingrese-texto,
+    .seccion-copiar {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .titulo-destacado,
+    .text_area,
+    .mensaje,
+    .contenedor-parrafo,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-size: 1rem;
+        padding: 3%;
+    }
+}
