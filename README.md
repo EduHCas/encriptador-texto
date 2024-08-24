@@ -46,4 +46,4 @@ Debe ingresar el texto que desea, teniendo en cuenta que que no se permiten cara
 ------------
 ## **Autor del Proyecto**
 
-[Eduardo Castillo](https://github.com/EduHCas/encriptador-texto "Eduardo Castillo")
+[Eduardo Castillo](https://github.com/EduHCas)
